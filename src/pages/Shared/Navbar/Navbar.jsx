@@ -50,7 +50,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-base-100 text-info font-semibold mt-5   container mx-auto">
+        <div className="navbar bg-base-100 text-success font-semibold mt-5   container mx-auto">
 
             <div className="navbar-start">
                 <div className="dropdown">
@@ -79,24 +79,24 @@ const Navbar = () => {
                 {
                     user?
                         <div >
-                            <span className="text-green-900">{user.email}</span>
+                            <span className="text-green-700">{user.email}</span>
                             <div className="flex gap-3">
                                 <div className="avatar  tooltip" data-tip={user.displayName} >
-                                    <div className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                    <div className="w-12 rounded-full ring ring-success ring-offset-base-100 ring-offset-2">
                                         <img src={user.photoURL} />
                                     </div>
                                 </div>
                                 
                                 <div>
                                     <button onClick={handleSignOut}
-                                    className="btn btn-info">Log out</button>
+                                    className="btn btn-success">Log out</button>
                                 </div>
                             </div>
                         </div>
                         
                         :
                         <Link to="/login">
-                        <button className="btn btn-info">Login</button>
+                        <button className="btn btn-success">Login</button>
                         </Link>
                 }
             </div>
