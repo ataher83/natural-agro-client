@@ -19,21 +19,13 @@ const VisitCount = () => {
         }, []);
       
       
-      
-      //   const handleReset = () => {
-      //     localStorage.setItem("page_view", 1);
-      //     setVisitCount(1);
-      //   };
-
-
-
 
 
     return (
 
           <div className="mt-4">
             <div className="text-lg footer-title text-green-600">Total Visit Count</div>
-            <div className="website-counter bg-orange-400 font-bold text-xl h-12 w-20 flex items-center justify-center rounded-full mt-2">{visitCount}</div>
+            <div className="website-counter bg-green-500 text-slate-100 font-bold text-xl h-12 w-20 flex items-center justify-center rounded-full mt-2">{visitCount}</div>
 
 
             
