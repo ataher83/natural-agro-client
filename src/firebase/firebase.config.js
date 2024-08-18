@@ -4,23 +4,39 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// const firebaseConfig = {
-//   apiKey: "AIzaSyCx2lT8gBpfebtGCykw44rVfb7HRsB0-7A",
-//   authDomain: "natural-agro.firebaseapp.com",
-//   projectId: "natural-agro",
-//   storageBucket: "natural-agro.appspot.com",
-//   messagingSenderId: "205202897644",
-//   appId: "1:205202897644:web:d73dd09c811c88caa003c9"
-// };
-
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_apiKey,
-  authDomain: import.meta.env.VITE_authDomain,
-  projectId: import.meta.env.VITE_projectId,
-  storageBucket: import.meta.env.VITE_storageBucket,
-  messagingSenderId: import.meta.env.VITE_messagingSenderId,
-  appId: import.meta.env.VITE_appId,
+    apiKey: import.meta.env.VITE_APIKEY,
+    authDomain: import.meta.env.VITE_AUTHDOMAIN,
+    projectId: import.meta.env.VITE_PROJECTID,
+    storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+    messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+    appId: import.meta.env.VITE_APPID,
+
+//   apiKey: "AIzaSyAIJvcJkR5VUGTrXQJqPv0ozF01FmnEoUI",
+//   authDomain: "the-art-gallery-74571.firebaseapp.com",
+//   projectId: "the-art-gallery-74571",
+//   storageBucket: "the-art-gallery-74571.appspot.com",
+//   messagingSenderId: "257907237444",
+//   appId: "1:257907237444:web:0138f1d153a2b6bd195211"
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+export default app;
+
+
+
+
+
+
+
+// new config to setup
+// const firebaseConfig = {
+//   apiKey: "AIzaSyDJt5xs7wDifmht6pTZL1ANJiRPUQlJEtE",
+//   authDomain: "the-alt-products.firebaseapp.com",
+//   projectId: "the-alt-products",
+//   storageBucket: "the-alt-products.appspot.com",
+//   messagingSenderId: "670767849706",
+//   appId: "1:670767849706:web:9c7f92c2b1154b74727793"
+// };
+
