@@ -60,9 +60,9 @@ const UpdateQuery = () => {
             </Helmet>
             
             <div className="bg-[#F4F3F0] p-24">
-                <h2 className="text-2xl font-extrabold text-center text-blue-600">Update Query</h2>
+                <h2 className="text-2xl font-extrabold text-center text-green-600">Update Query</h2>
 
-                <form onSubmit={handleUpdateQuery}  className="bg-blue-200 rounded-xl p-5 font-semibold">
+                <form onSubmit={handleUpdateQuery}  className="bg-green-200 rounded-xl p-5 font-semibold">
 
                     {/*  Product Image-URL */}
                     <div className="mb-8">

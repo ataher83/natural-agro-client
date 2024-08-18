@@ -96,7 +96,7 @@ const MyQueries = () => {
             <div>
                
                     <div>
-                        <h1 className='text-2xl font-semibold text-center text-blue-600 '>MY All Queries</h1>
+                        <h1 className='text-2xl font-semibold text-center text-green-600 '>MY All Queries</h1>
 
                         <div className="text-base font-medium text-center">
                             { myQueries.length < 1 ? (<p className="text-orange-600 font-medium text-xl ">Sorry! No Query Found, <br /> You have not added any Query yet. Please add your Query now.</p>) : (<p>(Total Queries: {myQueries.length})</p>) }
@@ -134,12 +134,12 @@ const MyQueries = () => {
                         
                                            
                                             <div className="card-actions justify-center items-center">
-                                                <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">Posted at: {myQuery.currentDateAndTime}</div>
-                                                <div className="badge badge-outline  bg-blue-400 font-semibold text-white border-blue-500">Posted by: {myQuery.userName}</div>  
+                                                <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">Posted at: {myQuery.currentDateAndTime}</div>
+                                                <div className="badge badge-outline  bg-green-400 font-semibold text-white border-green-500">Posted by: {myQuery.userName}</div>  
                                             </div>
 
                                             <div className="card-actions justify-center items-center">
-                                                <div className="badge badge-outline  bg-blue-400 font-semibold text-white border-blue-500">Recommendation: {myQuery.recommendationCount}</div> 
+                                                <div className="badge badge-outline  bg-green-400 font-semibold text-white border-green-500">Recommendation: {myQuery.recommendationCount}</div> 
                                             </div>
                         
                                           

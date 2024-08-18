@@ -67,7 +67,7 @@ const MyRecommendations = () => {
             </Helmet>
 
 
-            <h1 className='text-2xl font-semibold text-center text-blue-600 '>MY All Recommendations</h1>
+            <h1 className='text-2xl font-semibold text-center text-green-600 '>MY All Recommendations</h1>
 
             <div className="text-base font-medium text-center">
                 { myRecommendations.length < 1 ? (<p className="text-orange-600 font-medium text-xl ">Sorry! No Recommendation Found, <br /> You may not have added any Recommendation yet. Please View Queries add your Recommendation.</p>) : (<p>(Total Recommendation: {myRecommendations.length})</p>) }

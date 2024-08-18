@@ -107,7 +107,7 @@ const QueryDetails = () => {
             <Helmet>
                 <title>The Alt Products | Query Details: {query._id}</title>
             </Helmet>
-            <h2 className="text-xl font-bold text-center text-blue-600">Details About This Query</h2>
+            <h2 className="text-xl font-bold text-center text-green-600">Details About This Query</h2>
 
             {/* Show Query Details */}
             <div className="card bg-base-100 shadow-xl mt-4">
@@ -122,12 +122,12 @@ const QueryDetails = () => {
                     </div>
                     <p className="text-center pb-2">{query.boycottingReasonDetails}</p>
                     <div className="card-actions justify-center items-center">
-                        <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">Posted at: {query.currentDateAndTime}</div> 
-                        <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">Posted by: {query.userName}</div> 
+                        <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">Posted at: {query.currentDateAndTime}</div> 
+                        <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">Posted by: {query.userName}</div> 
                     </div>
                     <div className="card-actions justify-center items-center">
-                        <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">Recommendation: {query.recommendationCount}</div>
-                        <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">Email: {query.userEmail}</div>                          
+                        <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">Recommendation: {query.recommendationCount}</div>
+                        <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">Email: {query.userEmail}</div>                          
                     </div>
                     <div className="flex justify-center">
                         <img className="w-24 rounded-2xl" src={query.userImage} />   
@@ -141,7 +141,7 @@ const QueryDetails = () => {
 
             {/* Add Recommendation Section */}
             <div id="recommendationDiv" className="hidden bg-[#F4F3F0] px-24 py-5">
-                <h2 className="text-2xl font-extrabold text-center text-blue-600 py-5">Add A Recommendation</h2>
+                <h2 className="text-2xl font-extrabold text-center text-green-600 py-5">Add A Recommendation</h2>
                 <form onSubmit={handleAddRecommendation} className="space-y-4">
                     <input type="hidden" name="queryId" value={id} />
                     <input type="hidden" name="productName" value={query.productName} />
@@ -170,7 +170,7 @@ const QueryDetails = () => {
 
             {/* Show All Recommendations Section */}
             <div id="allRecommendationsDiv" className="hidden bg-[#F4F3F0] px-24 py-5">
-                <h2 className="text-2xl font-extrabold text-center text-blue-600 py-5">All Recommendations</h2>
+                <h2 className="text-2xl font-extrabold text-center text-green-600 py-5">All Recommendations</h2>
                 {particularQueryRecommendations.length > 0 ? (
                     <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
                         {particularQueryRecommendations.map((recommendation, index) => (

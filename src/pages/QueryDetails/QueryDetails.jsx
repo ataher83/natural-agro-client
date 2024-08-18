@@ -247,7 +247,7 @@ const QueryDetails = () => {
             <title>The Alt Products | Query Details: {query._id}</title>
             </Helmet>
 
-            <h2 className="text-xl font-bold text-center text-blue-600">Details About This Query</h2>
+            <h2 className="text-xl font-bold text-center text-green-600">Details About This Query</h2>
 
             {/* Show Query Details */}
             <div className="card bg-base-100 shadow-xl mt-4">
@@ -272,14 +272,14 @@ const QueryDetails = () => {
                     <p className="text-center pb-2">{query.boycottingReasonDetails}</p>
 
                     <div className="card-actions justify-center items-center">
-                        <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">Posted at: {query.currentDateAndTime}</div> 
-                        <div className="badge badge-outline  bg-blue-400 font-semibold text-white border-blue-500">Posted by: {query.userName}</div> 
+                        <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">Posted at: {query.currentDateAndTime}</div> 
+                        <div className="badge badge-outline  bg-green-400 font-semibold text-white border-green-500">Posted by: {query.userName}</div> 
                     </div>
                     
                     <div className="card-actions justify-center items-center">
-                        <div className="badge badge-outline  bg-blue-400 font-semibold text-white border-blue-500">Recommendation: {query.recommendationCount}</div>
+                        <div className="badge badge-outline  bg-green-400 font-semibold text-white border-green-500">Recommendation: {query.recommendationCount}</div>
 
-                        <div className="badge badge-outline  bg-blue-400 font-semibold text-white border-blue-500">Email: {query.userEmail}</div>                          
+                        <div className="badge badge-outline  bg-green-400 font-semibold text-white border-green-500">Email: {query.userEmail}</div>                          
                     </div>
                    
 
@@ -319,9 +319,9 @@ onclick="handleAddARecommendationNow('addARecommendationNowButton')"
 
             {/* Add Recommendation Section */}
             <div id="recommendationDiv" className="hidden bg-[#F4F3F0] px-24 py-5">
-                <h2 className="text-2xl font-extrabold text-center text-blue-600 py-5">Add A Recommendation</h2>
+                <h2 className="text-2xl font-extrabold text-center text-green-600 py-5">Add A Recommendation</h2>
 
-                <form onSubmit={handleAddRecommendation}  className="bg-blue-200 rounded-xl p-5 font-semibold">
+                <form onSubmit={handleAddRecommendation}  className="bg-green-200 rounded-xl p-5 font-semibold">
 
 
                 {/* Recommendation Part */}
@@ -497,7 +497,7 @@ onclick="handleAddARecommendationNow('addARecommendationNowButton')"
 
             {/* Show All the Recommendations Section */}
             <div id="allRecommendationsDiv" className="hidden">
-                <h1 className='text-2xl font-semibold text-center text-blue-600 '>Particular Query Recommendations</h1>
+                <h1 className='text-2xl font-semibold text-center text-green-600 '>Particular Query Recommendations</h1>
 
                 <div className="text-base font-medium text-center py-10">
 

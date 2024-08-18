@@ -6,7 +6,7 @@ const HeadingBanner = () => {
     return (
        
         <div className='container mx-auto my-10'>
-            <h2 className='text-2xl font-bold text-blue-600 text-center'>Find Your Alternative Products</h2>
+            <h2 className='text-2xl font-bold text-green-600 text-center'>Find Your Alternative Products</h2>
 
             <div className='pt-5'>
                 <div className="hero w-full h-[400px] " 

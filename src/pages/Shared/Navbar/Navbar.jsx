@@ -11,7 +11,7 @@ const Navbar = () => {
     const { user, logOut } = useContext(AuthContext); 
 
     const [text] = useTypewriter({
-        words: ['The Alt Products', 'The Alt Products', 'The Alt Products'],
+        words: ['Natural Agro', 'Natural Agro', 'Natural Agro'],
         loop: 0
       })
 
@@ -45,10 +45,7 @@ const Navbar = () => {
 
     const navLinks = <>
     <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/queries">Queries</NavLink></li>
-    <li><NavLink to="/recommendationsForMe">Recommendations For Me</NavLink></li>
-    <li><NavLink to="/myQueries">My Queries</NavLink></li>
-    <li><NavLink to="/myRecommendations">My Recommendations</NavLink></li>
+    <li><NavLink to="/allProducts">All Products</NavLink></li>
     <li><NavLink to="/blogs">Blogs</NavLink></li>
     </>
 
@@ -66,8 +63,8 @@ const Navbar = () => {
 
                 </ul>
                 </div>
-                <img className="w-12" src="https://i.postimg.cc/DzMGJPTd/altlogo.png" alt="" />
-                <a className="text-2xl font-bold text-blue-600" href="/"><span>{text}</span></a>
+                <img className="w-20" src="https://i.postimg.cc/SRB1LKLX/logo.png" alt="" />
+                <a className="text-2xl font-bold text-green-600" href="/"><span>{text}</span></a>
             </div>
 
             <div className="navbar-center hidden lg:flex">
@@ -82,7 +79,7 @@ const Navbar = () => {
                 {
                     user?
                         <div >
-                            <span className="text-blue-900">{user.email}</span>
+                            <span className="text-green-900">{user.email}</span>
                             <div className="flex gap-3">
                                 <div className="avatar  tooltip" data-tip={user.displayName} >
                                     <div className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">

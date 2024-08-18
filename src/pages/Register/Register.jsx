@@ -193,7 +193,7 @@ const Register = () => {
                             }
                         </div> */}
 
-                        <p className="text-center text-lg py-4">Already have an account? <Link className="text-blue-600 font-bold" to="/login">Login</Link></p>
+                        <p className="text-center text-lg py-4">Already have an account? <Link className="text-green-600 font-bold" to="/login">Login</Link></p>
 
                     </div>
                 </div>

@@ -66,11 +66,11 @@ const QueryCard = ({ query, queries, setQueries }) => {
                     <p className="text-center pb-2">{boycottingReasonDetails}</p>
                   
                     <div className="card-actions justify-center items-center">
-                        <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">Posted at: {currentDateAndTime}</div> 
+                        <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">Posted at: {currentDateAndTime}</div> 
                     </div>
 
                     <div className="card-actions justify-center items-center">
-                        <div className="badge badge-outline  bg-blue-400 font-semibold text-white border-blue-500">Posted by: {userName}</div> 
+                        <div className="badge badge-outline  bg-green-400 font-semibold text-white border-green-500">Posted by: {userName}</div> 
                     </div>
 
 

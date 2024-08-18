@@ -28,10 +28,10 @@ const Home = () => {
     return (
         <div className="">
             <Helmet>
-                <title>The Alt Products | Home</title>
+                <title>Natural Agro | Home</title>
             </Helmet>
-            <Banner></Banner>
-            <HeadingBanner></HeadingBanner>
+            {/* <Banner></Banner> */}
+            {/* <HeadingBanner></HeadingBanner> */}
 
 
 
@@ -50,9 +50,9 @@ const Home = () => {
         {/* Recent Queries Section */}
 
             <div className="py-16">
-                <p className="text-center text-2xl font-bold  text-blue-600 ">
+                <p className="text-center text-2xl font-bold  text-green-600 ">
                     <Slide>
-                        <h1>Recent Queries</h1>
+                        <h1>Natural Products</h1>
                     </Slide>
                 </p>
 
@@ -99,13 +99,13 @@ const Home = () => {
                                         <p className="text-center pb-2">{query.boycottingReasonDetails}</p>
 
                                         <div className="card-actions justify-center items-center">
-                                            <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">
+                                            <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">
                                                 Posted at: {query.currentDateAndTime}
                                             </div>
                                         </div>
 
                                         <div className="card-actions justify-center items-center">
-                                            <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">
+                                            <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">
                                                 Posted by: {query.userName}
                                             </div>
                                         </div>
@@ -127,7 +127,7 @@ const Home = () => {
 
 
 
-            <OurTeam></OurTeam>
+            {/* <OurTeam></OurTeam> */}
             <LocationMap></LocationMap>
             
 

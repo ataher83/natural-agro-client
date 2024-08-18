@@ -6,12 +6,12 @@ import { Fade, Slide } from "react-awesome-reveal";
 const LocationMap = () => {
     return (
         <div className='container mx-auto pb-5' >
-            <p className='text-center text-2xl font-bold  text-blue-600'>
+            <p className='text-center text-2xl font-bold  text-green-600'>
                 <Slide>
                     <h1>Track Our Location Easily</h1>
                 </Slide>
             </p>
-            <p className="text-center text-lg text-blue-500 hidden md:block "> 
+            <p className="text-center text-lg text-green-500 hidden md:block "> 
                     <Fade delay={1e3} cascade damping={1e-1}> Find our location on the map that help you to explore us easily </Fade>
             </p>
             <MapContainer className='h-64 w-full'

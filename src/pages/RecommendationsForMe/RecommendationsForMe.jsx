@@ -29,7 +29,7 @@ const RecommendationsForMe = () => {
             </Helmet>
 
 
-            <h1 className='text-2xl font-semibold text-center text-blue-600 '>Recommendations For Me</h1>
+            <h1 className='text-2xl font-semibold text-center text-green-600 '>Recommendations For Me</h1>
 
             <div className="text-base font-medium text-center">
                 { forMeRecommendations.length < 1 ? (<p className="text-orange-600 font-medium text-xl ">Sorry!! No Recommendations Found. <br /> No one may have added any recommendations for you yet. <br /> Please wait a little more...</p>) : (<p>(Total Recommendation: {forMeRecommendations.length})</p>) }

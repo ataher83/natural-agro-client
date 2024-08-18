@@ -53,7 +53,7 @@ const Queries = () => {
 
             {/* Queries Section */}
             <div className="py-16">
-                <p className="text-center text-2xl font-semibold  text-blue-600 ">
+                <p className="text-center text-2xl font-semibold  text-green-600 ">
                     <Slide>
                         <h1>All Queries</h1>
                     </Slide>
@@ -82,7 +82,7 @@ const Queries = () => {
                     <input
                         type="text"
                         placeholder="Search by product name"
-                        className="border border-blue-600 px-10 py-2 rounded-md"
+                        className="border border-green-600 px-10 py-2 rounded-md"
                         value={searchQuery}
                         onChange={handleSearch}
                         
@@ -92,7 +92,7 @@ const Queries = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                     </button> */}
 
-                    <span className="-ml-8"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="blue"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></span>
+                    <span className="-ml-8"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="green"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></span>
 
 
 
@@ -138,13 +138,13 @@ const Queries = () => {
                         
                                         
                                             <div className="card-actions justify-center items-center">
-                                                <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">Posted at: {query.currentDateAndTime}</div>
-                                                <div className="badge badge-outline  bg-blue-400 font-semibold text-white border-blue-500">Posted by: {query.userName}</div>  
+                                                <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">Posted at: {query.currentDateAndTime}</div>
+                                                <div className="badge badge-outline  bg-green-400 font-semibold text-white border-green-500">Posted by: {query.userName}</div>  
 
                                             </div>
                                             <div className="card-actions justify-center items-center">
 
-                                                <div className="badge badge-outline  bg-blue-400 font-semibold text-white border-blue-500">Recommendation: {query.recommendationCount}</div> 
+                                                <div className="badge badge-outline  bg-green-400 font-semibold text-white border-green-500">Recommendation: {query.recommendationCount}</div> 
                                             </div>
                         
                         
@@ -204,13 +204,13 @@ const Queries = () => {
                                         <p className="text-center pb-2">{query.boycottingReasonDetails}</p>
 
                                         <div className="card-actions justify-center items-center">
-                                            <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">
+                                            <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">
                                                 Posted at: {query.currentDateAndTime}
                                             </div>
                                         </div>
 
                                         <div className="card-actions justify-center items-center">
-                                            <div className="badge badge-outline bg-blue-400 font-semibold text-white border-blue-500">
+                                            <div className="badge badge-outline bg-green-400 font-semibold text-white border-green-500">
                                                 Posted by: {query.userName}
                                             </div>
                                         </div>

@@ -4,7 +4,7 @@ import { Link, useRouteError } from "react-router-dom";
 const ErrorPage = () => {
     const error = useRouteError();
     return (
-        <div className="bg-blue-100 text-center text-2xl text-blue-600 flex flex-col justify-center items-center py-10">
+        <div className="bg-green-100 text-center text-2xl text-green-600 flex flex-col justify-center items-center py-10">
             <img className="w-96 rounded-lg" src="https://i.postimg.cc/63wJ2gtR/errorpage.jpg" alt="" />
             <h1>Oops!!!</h1>
             <h3>Page not found.</h3>

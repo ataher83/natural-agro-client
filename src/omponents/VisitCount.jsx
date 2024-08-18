@@ -32,12 +32,12 @@ const VisitCount = () => {
     return (
 
           <div className="mt-4">
-            <div className="text-lg footer-title text-blue-600">Total Visit Count</div>
+            <div className="text-lg footer-title text-green-600">Total Visit Count</div>
             <div className="website-counter bg-orange-400 font-bold text-xl h-12 w-20 flex items-center justify-center rounded-full mt-2">{visitCount}</div>
 
 
             
-            {/* <button id="reset" className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition" onClick={handleReset}>Reset</button> */}
+            {/* <button id="reset" className="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition" onClick={handleReset}>Reset</button> */}
           </div>
     );
 };

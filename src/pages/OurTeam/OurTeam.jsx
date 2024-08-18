@@ -7,11 +7,11 @@ const OurTeam = () => {
             
 
             <div className="py-16 container mx-auto ">
-                <p className="text-center text-2xl font-bold  text-blue-600   ">
+                <p className="text-center text-2xl font-bold  text-green-600   ">
                     <Slide>
                         <h1>Our Team</h1>
                     </Slide></p>
-                    <p className="text-center text-lg text-blue-500 hidden md:block"> 
+                    <p className="text-center text-lg text-green-500 hidden md:block"> 
                         <Fade delay={1e3} cascade damping={1e-1}> Meet with our professional Team members, who will help you find your right alternative products </Fade>
                     </p>
                 
@@ -27,10 +27,10 @@ const OurTeam = () => {
                         </div>
 
                         <div className="card-body items-center text-center">
-                            <h2 className="card-title text-blue-500">Matt Haunz</h2>
+                            <h2 className="card-title text-green-500">Matt Haunz</h2>
                             <p>Consultant, Alternative Tech Products</p>
                             <div className="card-actions">
-                            <Link className=" text-blue-500 font-medium">View Profile</Link>
+                            <Link className=" text-green-500 font-medium">View Profile</Link>
                             </div>
                         </div>
 
@@ -45,10 +45,10 @@ const OurTeam = () => {
                         </div>
 
                         <div className="card-body items-center text-center">
-                            <h2 className="card-title text-blue-500">Jen Barnes</h2>
+                            <h2 className="card-title text-green-500">Jen Barnes</h2>
                             <p> Consultant, Alternative Products Researcher</p>
                             <div className="card-actions">
-                            <Link className=" text-blue-500 font-medium">View Profile</Link>
+                            <Link className=" text-green-500 font-medium">View Profile</Link>
                             </div>
                         </div>
 
@@ -63,10 +63,10 @@ const OurTeam = () => {
                         </div>
 
                         <div className="card-body items-center text-center">
-                            <h2 className="card-title text-blue-500">Dave Rosevelt</h2>
+                            <h2 className="card-title text-green-500">Dave Rosevelt</h2>
                             <p>Consultant, Alternative Agro & Foods</p>
                             <div className="card-actions">
-                            <Link className=" text-blue-500 font-medium">View Profile</Link>
+                            <Link className=" text-green-500 font-medium">View Profile</Link>
                             </div>
                         </div>
 
