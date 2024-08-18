@@ -111,7 +111,7 @@ const Login = () => {
     return (
       <div>
         <Helmet>
-            <title>The Alt Products | Login</title>
+            <title>Natural Agro | Login</title>
         </Helmet>
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col w-3/4 lg:w-1/2">
@@ -149,7 +149,7 @@ const Login = () => {
 
                     
                     <div className="-mt-6 font-semibold text-center">
-                        <button onClick={handleGoogleSignIn} className="btn btn-info">Login with Google</button>
+                        <button onClick={handleGoogleSignIn} className="btn btn-success">Login with Google</button>
                         {/* <button onClick={handleGithubSignIn} className="btn btn-info ml-4">Login with GitHub</button> */}
                     </div>
 
@@ -165,7 +165,7 @@ const Login = () => {
 
                     
 
-                    <p className="text-center mt-4">Do not have an account? <Link className="text-orange-600 font-bold" to="/register">Register</Link></p>
+                    <p className="text-center mt-4">Do not have an account? <Link className="text-green-600 font-bold" to="/register">Register</Link></p>
 
                 </div>
             </div>
