@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <div className="container mx-auto">
-      <footer className="footer p-10 bg-base-300 text-base-content">
+      <footer className="footer p-10 bg-base-300 text-green-800">
         <aside>
           <img className="w-24" src="https://i.postimg.cc/SRB1LKLX/logo.png" alt="Alt Products Logo" />
           <p className="font-semibold text-green-500">
@@ -15,7 +15,7 @@ const Footer = () => {
         </aside>
         <nav>
           <h6 className="footer-title text-green-600">Services</h6>
-          <a className="link link-hover">Harvest</a>
+          <a className="link link-hover">Production</a>
           <a className="link link-hover">Sales</a>
           <a className="link link-hover">Consultancy</a>
           <a className="link link-hover">24/7 Helpline</a>

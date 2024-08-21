@@ -8,15 +8,21 @@ import { useState } from 'react';
 
 
 const Home = () => {
+// const fetchProducts = async () => {
+
 
     const [searchTerm, setSearchTerm] = useState('');
     const [brandFilter, setBrandFilter] = useState('');
     const [categoryFilter, setCategoryFilter] = useState('');
     const [priceFilter, setPriceFilter] = useState('');
 
+    // const [sortPrice, setSortPrice] = useState('');
     const [sortPrice, setSortPrice] = useState('');
     const [sortDate, setSortDate] = useState('');
 
+    // const [stockFilter, setStockFilter] = useState('');
+    // const [typeFilter, setTypeFilter] = useState('');
+    // const [sortOrder, setSortOrder] = useState('asc');
 
     const { data: products = [], isLoading, refetch } = useQuery({
         queryKey: ['products', searchTerm, brandFilter, categoryFilter, priceFilter, sortPrice, sortDate],
@@ -45,6 +51,43 @@ const Home = () => {
     const handleSortPrice = (e) => { setSortPrice(e.target.value); refetch(); };
     const handleSortDate = (e) => { setSortDate(e.target.value); refetch(); };
 
+    // const handleSearchChange = (e) => setSearchTerm(e.target.value);
+    // const handleStockFilterChange = (e) => { setStockFilter(e.target.value); refetch(); };
+    // const handleTypeFilterChange = (e) => { setTypeFilter(e.target.value); refetch(); };
+    // const handleSortOrderChange = (e) => { setSortOrder(e.target.value); refetch(); };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   const response = await axios.get('http://localhost:3000/products');
+//   return response.data;
+// };
+
+// const Home = () => {
+//     const { data: products, isLoading, error } = useQuery({
+//       queryKey: ['products'],
+//       queryFn: fetchProducts,
+//     });
+  
+//     if (isLoading) return <div>Loading...</div>;
+//     if (error) return <div>Error loading products</div>;
+
+
     return (
         <div>
             <Helmet>
@@ -58,6 +101,8 @@ const Home = () => {
                         <h1>Natural Products</h1>
                     </Slide>
                 </p>
+
+
 
                 <div className='flex justify-between items-center mb-4'>
                         <input
@@ -111,9 +156,18 @@ const Home = () => {
 
 
 
-                {/* Show all products by latest/newest posted/products */}
+
+
+
+
+
+
+
+
+                {/* Show Recent/ Latest 6 products */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 container mx-auto">
                     {
+                        // products.sort((a, b) => new Date(b.currentDateAndTime) - new Date(a.currentDateAndTime)).slice(0, 6).map((product, index) => (
                         products.sort((a, b) => new Date(b.currentDateAndTime) - new Date(a.currentDateAndTime)).map((product, index) => (
                             <div key={index} className="card bg-base-100 shadow-xl mt-4">
                                 <figure><img className="w-full h-72" src={product.productImage} alt="Product Image" /></figure>
